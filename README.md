@@ -1,7 +1,5 @@
-# ProjetoAssembly
-Soma 2 arrays usando Assembly
+# AssemblyProject
 
-Projeto Assembly com C++ desenvolvido para avaliacao da UC "Arquitetura de Computadores"
-
-Compararam-se os ciclos de CPU para duas funções, uma usando C++ e outra usando Assembly. 
-Concluindo-se que Assembly "usou" 10x menos ciclos de CPU visto ser uma linguagem de baixo nivel comunicando diretamente com o hardware do computador. 
+Assembly Program with Cpp developed for Computers Arquitecture Course. 
+Compared CPU cycles for two functions doing the exact same thing(Sum of two arrays). When was coded in Cpp and the other in ASM.
+It was concluded that the assembly "used" 10 times less CPu cycles since it is considered a low level language ( communicates directly with the machine hardware).

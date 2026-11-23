@@ -1,30 +1,16 @@
-# AssemblyProject
+# Vector addition in C++ and Assembly
 
-Assembly vs C++ performance comparison project for Computer Architecture Course.
+My Computer Architecture project. A C++ program sets up two arrays of 65,536 integers and calls an Assembly routine to add them.
 
-## Overview
-- Implemented array sum in C++ and Assembly
-- Compared CPU cycle usage
-- Assembly version used 10x fewer cycles due to low-level optimization
+The routine uses SSE instructions to process four integers at a time. The C++ code measures the call with `__rdtsc()` and prints the sums and cycle count.
 
-## Technologies
-- Assembly language
-- C++
-- CPU cycle measurement tools
+## Files
 
-## Results
-- ASM: Direct hardware communication
-- Lower overhead
-- 10x performance improvement
-- Demonstrated low-level optimization benefits
+- `Projeto.cpp` — array setup, Assembly call, and timing
+- `Source.asm` — `add_vtr_asm` implementation
 
-## Setup
-1. Install compiler toolchain
-2. Build both versions
-3. Run performance tests
+## Build notes
 
-## License
-MIT
+The source uses Microsoft-specific C++ syntax and MASM-style Assembly. Build the two files together with a compatible 32-bit Microsoft C++/MASM toolchain.
 
-## Author
-Luís Barros
+There is no benchmark dataset or separate C++ implementation here to support a general speedup claim. The cycle count is the output of this particular exercise.
